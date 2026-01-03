@@ -1,0 +1,12 @@
+server:
+  port: ${PORT:8080}
+
+app:
+  env: ${ENV:development}
+  name: ${APP_NAME:JavaDockerApp}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
